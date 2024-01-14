@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--theme);
     color: var(--text);
-    font-family: '';
+    font-family: 'Public Sans';
   }
 
   html[data-theme="light"] {
