@@ -1,9 +1,9 @@
 const contacts = () => {
     return ( 
         <>
-            {/* <h1>
+            <h1>
                 akkak
-            </h1> */}
+            </h1>
         </>
      );
 }

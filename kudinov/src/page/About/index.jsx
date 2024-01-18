@@ -1,7 +1,7 @@
 const about = () => {
     return ( 
         <>
-        
+        <h1>fjfj</h1>
         </>
      );
 }
