@@ -8,12 +8,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html[data-theme="light"] {
-    --theme: white;
-    --text: black;
-  }
+    --theme-light: white;
+    --text-light: black;
+}
 
-  html[data-theme="dark"] {
-    --theme: black;
-    --text: white;
-  }
+html[data-theme="dark"] {
+    --theme-dark: black;
+    --text-dark: white;
+}
 `;
