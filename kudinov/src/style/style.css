@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;900&display=swap');
+
+*{
+    font-family: 'Public Sans';
+}
+body{
+    color: #EC5198;
+    background-color: #1C1D29;
+}

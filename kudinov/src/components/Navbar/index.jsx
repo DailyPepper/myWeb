@@ -18,6 +18,10 @@ const NavbarWrapper = styled.div`
     font-size: 55px;
     padding: 0px 10px 0px 0px;
   }
+  .head{
+    text-decoration: none;
+    color: #EC5198;
+  }
 `;
 const Navbarblock = styled.div`
   display: flex;
@@ -29,13 +33,14 @@ const Navbarblock = styled.div`
   .navbarLink {
     font-family: 'Public Sans';
     text-decoration: none;
-    color: #403e3ed7;
+    color: #EC5198;
   }
   .navbarLink:hover {
-    color: black;
+    color: #952f69;
     transition: 0.5s;
   }
-`;
+  
+`
 const SwitchThemeStyled = styled.button`
   width: 100px;
   height: 40px;
@@ -54,25 +59,26 @@ const SwitchThemeStyled = styled.button`
   &:hover {
     filter: grayscale(80%) sepia(20%);
   }
-`;
+`
 
-const SwitchTheme = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+// const SwitchTheme = () => {
+//   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
-  const handleClick = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
+//   const handleClick = () => {
+//     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+//   };
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
+//   useEffect(() => {
 
-  return (
-    <SwitchThemeStyled onClick={handleClick} theme={theme}>
-      {theme === 'light' ? 'Light Theme' : 'Dark Theme'}
-    </SwitchThemeStyled>
-  );
-};
+//     document.documentElement.setAttribute('data-theme', theme);
+//   }, []);
+
+//   return (
+//     <SwitchThemeStyled onClick={handleClick} theme={theme}>
+//       {theme === 'dark' ? 'Light Theme' : 'Dark Theme'}
+//     </SwitchThemeStyled>
+//   );
+// };
 
 
 const Navbar = () => {
@@ -80,12 +86,14 @@ const Navbar = () => {
   const handleMainClick = () => {
     navigate('/main');
   };
+
   return (
     <div>
       <GlobalStyles />
       <NavbarWrapper>
-        <h1 className='heading'>KUDINOV</h1>
-
+        <Link to={MAIN_ROUTE} className='head'>
+          <h1 className='heading'>KUDINOV</h1>
+        </Link>
         <Navbarblock>
           <Link to={MAIN_ROUTE} className='navbarLink'>
             Главная
@@ -96,7 +104,7 @@ const Navbar = () => {
           <Link to={CONTACTS_ROUTE} className='navbarLink'>
             Контакты
           </Link>
-          <SwitchTheme />
+          {/* <SwitchTheme /> */}
         </Navbarblock>
       </NavbarWrapper>
     </div>
