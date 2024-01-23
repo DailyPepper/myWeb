@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate , useLocation} from 'react-router-dom';
 import { CONTACTS_ROUTE, MAIN_ROUTE, PORTFOLIO_ROUTE } from '../../App/routing/config';
 import { GlobalStyles } from '../../style/global-styled';
 import styled from 'styled-components';
@@ -38,6 +38,9 @@ const Navbarblock = styled.div`
   .navbarLink:hover {
     color: #ff8437;
     transition: 0.5s;
+  }
+  .navbarLink.active {
+    color: #d57032ec;
   }
   
 `
@@ -82,7 +85,9 @@ const SwitchThemeStyled = styled.button`
 
 
 const Navbar = () => {
+  const { pathname } = useLocation();
   const navigate = useNavigate();
+
   const handleMainClick = () => {
     navigate('/main');
   };
@@ -94,21 +99,22 @@ const Navbar = () => {
         <Link to={MAIN_ROUTE} className='head'>
           <Heading>KUDINOV</Heading>
         </Link>
-        <Navbarblock>
-          <Link to={MAIN_ROUTE} className='navbarLink'>
-            Главная
-          </Link>
-          <Link to={PORTFOLIO_ROUTE} className='navbarLink' onClick={handleMainClick}>
-            Портфолио
-          </Link>
-          <Link to={CONTACTS_ROUTE} className='navbarLink'>
-            Контакты
-          </Link>
-          {/* <SwitchTheme /> */}
-        </Navbarblock>
+          <Navbarblock>
+            <Link to={MAIN_ROUTE} className={`navbarLink ${pathname === '/' ? 'active' : ''}`}>
+              Главная
+            </Link>
+            <Link to={PORTFOLIO_ROUTE} className={`navbarLink ${pathname === '/portfolio' ? 'active' : ''}`} onClick={handleMainClick}>
+              Портфолио
+            </Link>
+            <Link to={CONTACTS_ROUTE} className={`navbarLink ${pathname === '/contacts' ? 'active' : ''}`}>
+              Контакты
+            </Link>
+            {/* <SwitchTheme /> */}
+          </Navbarblock>
       </NavbarWrapper>
     </div>
   );
 };
+
 
 export default Navbar;
