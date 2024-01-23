@@ -14,15 +14,15 @@ const NavbarWrapper = styled.div`
   padding-top: 5px;
   margin: 0px 10px 10px 10px;
 
-  .heading {
-    font-size: 55px;
-    padding: 0px 10px 0px 0px;
-  }
   .head{
     text-decoration: none;
     color: #ff8437;
   }
 `;
+const Heading = styled.h1`
+    font-size: 55px;
+    padding: 0px 10px 0px 0px;
+`
 const Navbarblock = styled.div`
   display: flex;
   gap: 90px;
@@ -92,7 +92,7 @@ const Navbar = () => {
       <GlobalStyles />
       <NavbarWrapper>
         <Link to={MAIN_ROUTE} className='head'>
-          <h1 className='heading'>KUDINOV</h1>
+          <Heading>KUDINOV</Heading>
         </Link>
         <Navbarblock>
           <Link to={MAIN_ROUTE} className='navbarLink'>
