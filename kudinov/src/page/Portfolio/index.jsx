@@ -1,10 +1,19 @@
+import styled from 'styled-components';
+
+
+const PortfolioWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+`
 const portfolio = () => {
     return ( 
         <>
-        <h1>
-            hdfd
-            
-        </h1>
+        <PortfolioWrapper>
+            <h1>
+                Проекты
+            </h1>
+        </PortfolioWrapper>
         </>
      );
 }
