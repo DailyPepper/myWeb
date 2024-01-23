@@ -20,7 +20,7 @@ const NavbarWrapper = styled.div`
   }
   .head{
     text-decoration: none;
-    color: #EC5198;
+    color: #ff8437;
   }
 `;
 const Navbarblock = styled.div`
@@ -33,10 +33,10 @@ const Navbarblock = styled.div`
   .navbarLink {
     font-family: 'Public Sans';
     text-decoration: none;
-    color: #EC5198;
+    color: #1a1515d9;
   }
   .navbarLink:hover {
-    color: #952f69;
+    color: #ff8437;
     transition: 0.5s;
   }
   
