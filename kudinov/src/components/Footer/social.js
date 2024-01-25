@@ -1,23 +1,27 @@
-import git from '../../icon/git.svg'
-import { socialList } from '../../helpers/socialList';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const liLink = styled.li`
-    width: 50px;
-    height: 30px;
-` 
 const Img = styled.img`
     width: 50px;
     height: 30px;
-`
+    filter: grayscale(0%) brightness(100%);
+    transition: filter 0.3s ease;
 
+    &:hover {
+        color: red;
+        // добавить цвет 
+    }
 
-const Social = ({img}) => {
+`;
+
+const Social = ({ img, link }) => {
     return (
-            <liLink>
-                <Img src={img} alt="" />
-            </liLink>
-    )
-}
 
-export {Social}
+        <Link to={link} target="_blank" rel="noopener noreferrer">
+            <Img src={img} alt="" />
+        </Link>
+    );
+};
+
+export { Social };
