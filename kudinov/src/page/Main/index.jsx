@@ -4,7 +4,7 @@ import img2 from '../../img/img2.png'
 const MainWrapper = styled.div`
     display: flex;
     justify-content: center;
-    padding: 100px 110px 100px 110px;
+    padding: 100px 110px 40px 110px;
     flex-direction: column;
 `
 const MainBlock = styled.div`

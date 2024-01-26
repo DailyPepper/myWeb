@@ -1,20 +1,26 @@
 import styled from 'styled-components';
-import img4 from '../../img/img4.jpg'
+import img4 from '../../img/img4.png'
 
 const PortfolioWrapper = styled.div`
     display: flex;
-    justify-content: center;
-    padding: 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+`
+const Img = styled.img`
+    width: 250px;
+    height: 195px;
 `
 const portfolio = () => {
     return ( 
         <>
-        <img src={img4} alt="" />
+        
         <PortfolioWrapper>
-            
-            <h1>
-                Проекты
-            </h1>
+            <Img src={img4} alt="" />    
+                {/* <h1>
+                    Проекты
+                </h1> */}
+
         </PortfolioWrapper>
         </>
      );
