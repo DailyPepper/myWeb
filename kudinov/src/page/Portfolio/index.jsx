@@ -17,7 +17,7 @@ const UlList = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
-    padding: 50px;
+    padding: 50px 130px;
 `
 const List = styled.li`
     width: 310px;

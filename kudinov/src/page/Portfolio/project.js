@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import git from '../../icon/git.svg'
 
 const Block = styled.div`
-    /* display: flex;
-    flex-direction: column; */
+
     .Links{
         display: flex;
         justify-content: flex-end;
@@ -33,7 +32,7 @@ const Project = ({ title, skills, gitHubLink, img}) => {
     return (
             <>
                 <Block>
-                    <Img src={img}></Img>
+                    <Img src={img}/>
                     <Title>{title}</Title>
                     <Text>{skills}</Text>
                     <Link to={gitHubLink} target="_blank" rel="noopener noreferrer" className='Links'>
