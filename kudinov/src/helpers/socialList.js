@@ -2,7 +2,6 @@ import git from '../icon/git.svg'
 import Gmail from '../icon/Gmail.svg'
 import TG from '../icon/TG.svg'
 import Inst from '../icon/Inst.svg'
-import { Link } from 'react-router-dom'
 
 const socialList = [
     {
@@ -15,11 +14,12 @@ const socialList = [
     },
     {
         img: Inst,
-        link: 'https://t.me/tvoykudinov'
+        link: 'https://www.instagram.com/iamdanielkudinov/'
     },
     {
-        img: Gmail
-    }
+        img: Gmail,
+        link: 'mailto:danielkudinov17@gmail.com'
+    },
 ]
 
 export {socialList}

@@ -1,19 +1,23 @@
-
+import prod1 from '../img/prod1.png'
 
 const projects = [
     {
         title: 'Тестер кода',
-        skils: 'React, Js, Ts',
-        // img: ,
+        skills: 'React, Js, Ts',
+        img: prod1,
         gitHubLink: 'https://github.com/DailyPepper/sdo-react/tree/main/sdo'
     },
     {
-        title: 'Интернет магазин одежды KUDINOV',
-        skils: 'Python, Django, DRF,JS, Bootstrap',
-        // img: ,
+        title: 'Интернет магазин одежды',
+        skills: 'Python, Django, DRF, JS, Bootstrap',
+        img: prod1,
         gitHubLink: 'https://github.com/DailyPepper/KUDINOV_Django'
     },
     {
-        
+        title: 'Интернет магазин одежды',
+        skills: 'Python, Django, DRF, JS, Bootstrap',
+        img: prod1,
+        gitHubLink: 'https://github.com/DailyPepper/KUDINOV_Django'
     }
 ]
+export {projects}
