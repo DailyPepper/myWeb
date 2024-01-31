@@ -10,8 +10,8 @@ const PortfolioWrapper = styled.div`
     padding: 50px;
 `
 const Img = styled.img`
-    width: 250px;
-    height: 205px;
+    width: 205px;
+    height: 180px;
 `
 const UlList = styled.ul`
     display: flex;
@@ -24,7 +24,7 @@ const List = styled.li`
     height: 300px;
     background: white;
     border-radius: 20px;
-    border: 1px solid orange;
+    border: 1px solid #ff8437;;
     list-style-type: none;
 `
 const Portfolio = () => {

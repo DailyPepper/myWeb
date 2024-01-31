@@ -31,7 +31,7 @@ const Head = styled.h1`
 const Text = styled.p`
     font-size: 35px;
     display: flex;
-    padding: 0px 180px;
+    padding: 0px 175px;
 `
 const Prof = styled.p`
     font-size: xx-large;

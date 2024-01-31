@@ -12,18 +12,23 @@ const Hr = styled.hr`
 
 const FooterWrapper = styled.nav`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0px 220px;
 `
 const UlList = styled.ul`
     display: flex;
     list-style-type: none;
 `
+const Name = styled.p`
+    color: grey;
+    font-size: 15px;
+`
 const Footer = () => {
     return (
         <>
             <Hr />
             <FooterWrapper>
+                <Name> @DanielKudinov</Name>
                 <UlList>
                     {socialList.map((social, index) => (
                         <li key={index}>
