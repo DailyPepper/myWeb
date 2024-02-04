@@ -8,6 +8,11 @@ const Hr = styled.hr`
     width: 1100px;
     opacity: 0.5;
     border: 0.1rem solid #ff8437;
+    @media(max-width: 770px){
+        width: 500px;
+        opacity: 0.5;
+        border: 0.1rem solid #ff8437;
+    }
 `
 
 const FooterWrapper = styled.nav`

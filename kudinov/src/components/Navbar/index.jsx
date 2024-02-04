@@ -18,10 +18,19 @@ const NavbarWrapper = styled.div`
     text-decoration: none;
     color: #ff8437;
   }
+  @media(max-width: 770px){
+    padding-top: 5px;
+    margin: 0px 20px 0px 65px;
+    justify-content: space-between;
+  }
 `;
 const Heading = styled.h1`
     font-size: 55px;
     padding: 0px 10px 0px 0px;
+    @media(max-width: 770px){
+      font-size: 55px;
+      padding: 0px 10px 0px 0px;
+    }
 `
 const Navbarblock = styled.div`
   display: flex;
@@ -41,6 +50,13 @@ const Navbarblock = styled.div`
   }
   .navbarLink.active {
     color: #d57032ec;
+  }
+  @media(max-width:770px){
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    font-size: 24px;
+    padding: 60px 15px 0px 5px;
   }
   
 `
@@ -93,7 +109,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       <NavbarWrapper>
         <Link to={MAIN_ROUTE} className='head'>
@@ -112,7 +128,7 @@ const Navbar = () => {
             {/* <SwitchTheme /> */}
           </Navbarblock>
       </NavbarWrapper>
-    </div>
+    </>
   );
 };
 
