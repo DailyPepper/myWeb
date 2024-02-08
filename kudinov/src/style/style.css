@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 *{
+    /* padding: 0px;
+    margin: 0px; */
     font-family: 'Public Sans';
 }
 body{
     color: #000000;
     background-color: #eeeff7ed;
+    /* padding: 0px;
+
+    margin: 0px; */
 }

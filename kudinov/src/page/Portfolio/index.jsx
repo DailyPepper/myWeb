@@ -8,6 +8,16 @@ const PortfolioWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    @media(min-width: 770px){
+        display: flex;
+        flex-direction: column;
+        padding: 50px 29px 0px 165px;
+    }
+    @media(max-width: 770px){
+        display: flex;
+        flex-direction: column;
+        padding: 50px 29px 0px 465px;
+    }
 `
 const Img = styled.img`
     width: 205px;

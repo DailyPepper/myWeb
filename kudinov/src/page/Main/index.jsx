@@ -11,7 +11,7 @@ const MainWrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         width: 710px;
-        padding: 0px 50px;
+        padding: 0px 80px;
     }
 
 `
@@ -59,7 +59,6 @@ const Text = styled.p`
     padding: 0px 175px;
     @media(max-width: 770px) {
         font-size: 30px;
-        display: flex;
         justify-content: center;
         padding: 0px;
     }

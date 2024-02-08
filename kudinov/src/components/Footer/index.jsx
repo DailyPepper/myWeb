@@ -19,7 +19,8 @@ const FooterWrapper = styled.nav`
     padding: 0px 220px;
 
     @media(max-width: 770px){
-        gap: 245px;
+        padding: 10px 99px 10px 235px;
+        gap: 45px;
     }
 `
 const UlList = styled.ul`
@@ -36,9 +37,17 @@ const Name = styled.p`
         display: flex;
     }
 `
+const FooterBlock = styled.footer`
+    @media(max-width: 770px){
+        /* padding: 25%;
+        background-color: #ffa263;
+        position: absolute; 
+        margin-top: 170%; */
+    }
+`
 const Footer = () => {
     return (
-        <>
+        <FooterBlock>
             <Hr />
             <FooterWrapper>
                 <Name> @DanielKudinov</Name>
@@ -50,7 +59,7 @@ const Footer = () => {
                     ))}
                 </UlList>
             </FooterWrapper>
-        </>
+        </FooterBlock>
     );
 }
 

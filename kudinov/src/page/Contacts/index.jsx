@@ -6,6 +6,11 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: center;
     padding: 75px;
+    @media(max-width: 770px){
+        display: flex;
+        flex-direction: column;
+        padding: 50px 29px 0px 165px;
+    }
 `
 const UlList = styled.ul`
     display: flex;
