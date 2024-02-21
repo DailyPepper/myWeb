@@ -16,7 +16,7 @@ const PortfolioWrapper = styled.div`
     @media(max-width: 770px){
         display: flex;
         flex-direction: column;
-        padding: 50px 29px 0px 465px;
+        padding: 50px 29px 0px 165px;
     }
 `
 const Img = styled.img`
