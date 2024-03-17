@@ -16,7 +16,7 @@ const PortfolioWrapper = styled.div`
     @media(max-width: 770px){
         display: flex;
         flex-direction: column;
-        padding: 50px 29px 0px 165px;
+        padding: 50px 29px 0px 125px;
     }
 `
 const Img = styled.img`
@@ -24,10 +24,11 @@ const Img = styled.img`
     height: 180px;
 `
 const UlList = styled.ul`
-    display: flex;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
     flex-wrap: wrap;
     gap: 100px;
-    padding: 50px 130px;
+    padding: 50px 40px 10px 0px;
 `
 const List = styled.li`
     width: 310px;
