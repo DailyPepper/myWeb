@@ -11,12 +11,12 @@ const PortfolioWrapper = styled.div`
     @media(min-width: 770px){
         display: flex;
         flex-direction: column;
-        padding: 50px 29px 0px 165px;
+        padding: 50px 100px 0px 165px;
     }
     @media(max-width: 770px){
         display: flex;
         flex-direction: column;
-        padding: 50px 29px 0px 125px;
+        padding: 50px 100px 0px 125px;
     }
 `
 const Img = styled.img`
